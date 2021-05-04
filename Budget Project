@@ -1,1 +1,43 @@
+"""
+create class called budget for Mini-Birthday Party
+"""
 
+
+class Budget():
+    pass
+
+
+# to set attributes
+class Category(object):
+    def __init__(self, name):
+        self.name = name
+        self.ledger = list()
+
+    def Category_deposit(self, amount, description):
+        self.ledger.append = ({'amount': amount, 'description': description})
+
+    def get_balance(self):
+        total_cash = 0
+        for item in self.ledger:
+            total_cash = item['amount']
+
+    def check_funds(self, amount):
+        if (self.get_balance == 'amount'):
+            return True
+        return False
+
+    def withdraw(self, amount, bal, description):
+       if (self.check_funds(amount)):
+           self.ledger.append = ({'amount': amount,'description':description })
+
+    def transfer(self, amount, Category, deposit):
+        if (self.check_funds(amount)):
+            self.withdraw(amount, 'Transfer To ' + Category)
+            deposit(amount, 'Transfer From ' + self.name)
+
+
+Food = Budget()
+
+Clothing = Budget()
+
+Entertainment = Budget()
